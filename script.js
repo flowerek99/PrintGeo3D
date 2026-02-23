@@ -6,7 +6,7 @@ const products = [
         id: 1,
         name: "Transparentne etui na USB",
         price: "7.00 PLN",
-        image: "https://uploads.onecompiler.io/44egrsma2/44egpwedy/WhatsApp%20Image%202026-02-23%20at%2022.04.16.jpeg", // Ścieżka do Twojego zdjęcia
+        image: "fav.jpeg", // Ścieżka do Twojego zdjęcia
         description: "Lekkie, przeźroczyste pudełko. Idealnie mieści standardowy pendrive lub mały logbook zwijany.",
         usage: "Zastosowanie: Skrytki typu 'Digital Dead Drop' (wymiana danych w terenie) lub jako insert chroniący logbook przed przetarciem wewnątrz większych keszy. UWAGA: Pudełko nie jest wodoodporne – zalecane do skrytek ukrytych pod dachem lub wewnątrz szczelnych pojemników zewnętrznych.",
     }
@@ -69,4 +69,5 @@ const products = [
             });
         });
     });
+
 });
