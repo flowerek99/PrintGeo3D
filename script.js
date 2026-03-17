@@ -77,7 +77,7 @@ function checkCode() {
     const result = document.getElementById('code-result');
 
     const codes = {
-        "Kroliczek26": " 51°04'55.02"N 16°57'34.67"E ",
+        "KROLICZEK26": " 51°04'55.02"N 16°57'34.67"E ",
     };
 
     if (codes[input]) {
