@@ -71,3 +71,20 @@ const products = [
     });
 
 });
+// 5. System kodów
+function checkCode() {
+    const input = document.getElementById('secret-code').value.trim().toUpperCase();
+    const result = document.getElementById('code-result');
+
+    const codes = {
+        "GEO123": "🎉 Gratulacje! Odblokowałeś zniżkę 10%",
+        "KESZER": "🧭 Tajna wskazówka: sprawdź stary most",
+        "PRINT3D": "📦 Dostajesz darmową wysyłkę"
+    };
+
+    if (codes[input]) {
+        result.innerHTML = `<p style="color:lightgreen;">${codes[input]}</p>`;
+    } else {
+        result.innerHTML = `<p style="color:red;">❌ Niepoprawny kod</p>`;
+    }
+}
