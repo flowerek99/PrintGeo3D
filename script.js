@@ -77,9 +77,7 @@ function checkCode() {
     const result = document.getElementById('code-result');
 
     const codes = {
-        "GEO123": "🎉 Gratulacje! Odblokowałeś zniżkę 10%",
-        "KESZER": "🧭 Tajna wskazówka: sprawdź stary most",
-        "PRINT3D": "📦 Dostajesz darmową wysyłkę"
+        "Kroliczek26": " 51°04'55.02"N 16°57'34.67"E ",
     };
 
     if (codes[input]) {
