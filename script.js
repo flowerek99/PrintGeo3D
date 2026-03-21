@@ -67,10 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
             usage: "Idealny do włożenia w dziurę w słupie."
         },
         {
-            name: "Mini cache",
+            name: "Kesz nakładka na słup",
             image: "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/20230830_064747.webp",
-            desc: "Mały dekoracyjny kesz.",
-            usage: "Bonus."
+            desc: "Kesz do nałożenia na słup w każdym miejscu.",
+            usage: "Możliwość ukrycia wszędzie, wystarczy płot."
         }
     ];
 
