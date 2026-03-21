@@ -51,24 +51,24 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: "Kłoda z labiryntem",
             image: "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/20190502_220710_12014.webp",
-            desc: "Kłoda z ukrytym mechanizmem labiryntowym.",
-            usage: "Puzzle cache – trzeba rozwiązać mechanizm."
+            desc: "Kłoda z ukrytym labiryntem.",
+            usage: "Puzzle cache – trzeba rozwiązać labirynt."
         },
         {
             name: "Labiryntowy kesz",
-            image: "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/20230830_064747.webp",
-            desc: "Zaawansowany kesz z mechanizmem.",
-            usage: "Idealny na finał."
+            image: "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/cache-front.webp",
+            desc: "Zaawansowany kesz, wymagający rozwiązania labiryntu.",
+            usage: "Idealny na finał"
         },
         {
-            name: "Front cache",
-            image: "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/cache-front.webp",
-            desc: "Element maskujący kesz.",
-            usage: "Do miasta."
+            name: "Kesz - śrubka",
+            image: "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/featured_preview_87773141_763131484177741_9180990111326666752_n.webp",
+            desc: "Kesz na gwint, przypominający śróbkę",
+            usage: "Idealny do włożenia w dziurę w słupie."
         },
         {
             name: "Mini cache",
-            image: "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/featured_preview_87773141_763131484177741_9180990111326666752_n.webp",
+            image: "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/20230830_064747.webp",
             desc: "Mały dekoracyjny kesz.",
             usage: "Bonus."
         }
