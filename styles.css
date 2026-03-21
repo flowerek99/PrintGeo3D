@@ -389,3 +389,16 @@ footer {
 .code-box button {
     padding: 10px 20px;
 }
+
+/* ukryte opisy */
+.proposal-extra {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+/* po kliknięciu */
+.product-card.active .proposal-extra {
+    max-height: 200px;
+}
