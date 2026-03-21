@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Kesz nakładka na słup",
             image: "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/20230830_064747.webp",
             desc: "Kesz do nałożenia na słup w każdym miejscu.",
-            usage: "Możliwość ukrycia wszędzie, wystarczy płot."
+            usage: "Możliwość ukrycia wszędzie, wystarczy znaleźć płot."
         }
     ];
 
