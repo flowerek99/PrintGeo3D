@@ -112,65 +112,61 @@ function checkCode() {
 const proposals = [
     {
         name: "Kłoda z labiryntem",
+        price: "Model inspiracyjny",
         images: [
             "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/20190502_220710_12014.webp"
         ],
-        description: "Model przypominający kawałek drewna, w środku ukryty mechaniczny labirynt.",
-        usage: "Typowy puzzle cache – żeby dostać się do logbooka trzeba rozwiązać mechanizm."
+        description: "Model przypominający kawałek drewna, który skrywa w środku labirynt. Aby dostać się do środka, trzeba odpowiednio manipulować mechanizmem.",
+        usage: "Świetny jako kesz typu puzzle – zmusza znalazcę do interakcji i rozwiązania zagadki zamiast prostego otwarcia."
     },
     {
-        name: "Labiryntowy kesz (zaawansowany)",
+        name: "Labiryntowy kesz (wariant)",
+        price: "Model inspiracyjny",
         images: [
             "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/20230830_064747.webp",
             "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/20231011_170526.webp"
         ],
-        description: "Zaawansowany pojemnik z mechanizmem labiryntowym.",
-        usage: "Świetny na finał kesza lub coś, co zapada w pamięć."
+        description: "Zaawansowany pojemnik z wewnętrznym mechanizmem labiryntowym. Wymaga odpowiedniego ustawienia, aby uzyskać dostęp do logbooka.",
+        usage: "Idealny na finał kesza premium lub jako element multi-cache. Można zwiększyć trudność przez ukrycie wskazówek w terenie."
     },
     {
         name: "Front cache (maskowanie)",
+        price: "Model inspiracyjny",
         images: [
             "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/cache-front.webp"
         ],
-        description: "Element maskujący, który pozwala ukryć kesz w otoczeniu.",
-        usage: "Idealny do miejskich skrytek – wtapia się w otoczenie."
+        description: "Element maskujący front kesza, który pozwala ukryć pojemnik w strukturze otoczenia.",
+        usage: "Do stosowania w miejskich skrytkach – łatwo wtapia się w otoczenie i utrudnia wykrycie przez mugoli."
     },
     {
         name: "Mini cache dekoracyjny",
+        price: "Model inspiracyjny",
         images: [
             "https://raw.githubusercontent.com/flowerek99/PrintGeo3D/main/featured_preview_87773141_763131484177741_9180990111326666752_n.webp"
         ],
-        description: "Mały estetyczny pojemnik o nietypowym wyglądzie.",
-        usage: "Dobry jako szybki kesz lub bonus."
+        description: "Mały, estetyczny pojemnik o niestandardowym wyglądzie. Może pełnić funkcję zarówno kesza jak i gadżetu.",
+        usage: "Dobry jako szybki kesz do znalezienia lub bonus przy większej skrytce."
     }
 ];
 
+// renderowanie propozycji
 const proposalGrid = document.getElementById('proposal-grid');
 
-if (proposalGrid) {
-    proposals.forEach(item => {
-        const card = document.createElement('div');
-        card.classList.add('product-card');
+proposals.forEach(item => {
+    const card = document.createElement('div');
+    card.classList.add('product-card');
 
-        card.innerHTML = `
-            <img src="${item.images[0]}" class="product-img">
+    card.innerHTML = `
+        <img src="${item.images[0]}" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">${item.name}</h3>
+            <p class="product-price">${item.price}</p>
+        </div>
+    `;
 
-            <div class="product-info">
-                <h3 class="product-title">${item.name}</h3>
-                
-                <p style="margin-top:10px; font-size:0.9rem; color:#ccc;">
-                    ${item.description}
-                </p>
-
-                <p style="margin-top:10px; font-size:0.85rem; color:#9ca3af;">
-                    ${item.usage}
-                </p>
-            </div>
-        `;
-
-        proposalGrid.appendChild(card);
-    });
-}
+    card.addEventListener('click', () => openProposalModal(item));
+    proposalGrid.appendChild(card);
+});
 
 // renderowanie propozycji
 const proposalGrid = document.getElementById('proposal-grid');
