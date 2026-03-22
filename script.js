@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 1,
             name: "Transparentne etui na USB",
-            price: "7.00 PLN",
+            price: "5.00 PLN",
             image: "fav.jpeg",
             description: "Lekkie pudełko na pendrive lub logbook.",
             usage: "Digital Dead Drop lub ochrona logbooka.",
