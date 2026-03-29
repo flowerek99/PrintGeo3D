@@ -103,3 +103,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+function checkCode() {
+    const input = document.getElementById('secret-code').value.trim().toUpperCase();
+    const result = document.getElementById('code-result');
+
+    const codes = {
+        "KROLICZEK26": "📍 51°04'55.02\"N 16°57'34.67\"E",
+    };
+
+    if (codes[input]) {
+        result.innerHTML = `<p style="color:lightgreen;">${codes[input]}</p>`;
+    } else {
+        result.innerHTML = `<p style="color:red;">❌ Niepoprawny kod</p>`;
+    }
+}
