@@ -110,7 +110,7 @@ function checkCode() {
 
     const codes = {
         "KROLICZEK26": "📍 51°04'55.02\"N 16°57'34.67\"E",
-        "KROLIK26": "Wkrótce",
+        "KROLIK26": "51°04'54.23"N 16°57'35.20"E",
     };
 
     if (codes[input]) {
