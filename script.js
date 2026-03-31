@@ -109,8 +109,8 @@ function checkCode() {
     const result = document.getElementById('code-result');
 
     const codes = {
-        "KROLICZEK26": "📍 51°04'55.02\"N 16°57'34.67\"E",
-        "KROLIK26": "Azymut się zniszyczył ale na szczęście zbaleźliśmy te współrzędne! 51°04'54.23"N 16°57'35.20"E",
+        "KROLICZEK26": `📍 51°04'55.02\"N 16°57'34.67\"E`,
+        "KROLIK26": `Azymut się zniszyczył ale na szczęście zbaleźliśmy te współrzędne! 51°04'54.23"N 16°57'35.20"E`,
     };
 
     if (codes[input]) {
